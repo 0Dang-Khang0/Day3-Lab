@@ -8,6 +8,8 @@ outputs/*
 !outputs/.gitkeep
 !outputs/*.json
 !outputs/model_clip_01.txt
+!outputs/model_bytetrack_clip_01.txt
+!outputs/model_reid_clip_01.txt
 
 # Artifact tạm và model weights.
 outputs/vis_*/

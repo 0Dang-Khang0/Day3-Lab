@@ -1,7 +1,13 @@
 # Ngày 3 — Dữ liệu Video Tracking
 
-**Đối tượng:** học viên Giai đoạn 1. **Trạng thái:** tài liệu học viên dùng trong lớp.
-**Thời lượng:** 240 phút.
+**Đối tượng:** học viên Giai đoạn 1, lộ trình chung **Level 2 → Level 3**.
+**Thời lượng:** 240 phút. **Repo đề bài:** `K4-L2-L3-DAY03-VideoTracking`.
+
+**Hình thức:** làm cá nhân hoặc phối hợp theo nhóm. Dù chọn cách nào, mỗi học
+viên vẫn nộp **một repo cá nhân** để Lab Coach xác minh phần việc và evidence
+độc lập. **Nơi nộp:** VLearn (dán link repo cá nhân). **Hạn nộp mặc định:**
+23:59, múi giờ `Asia/Ho_Chi_Minh`, ngày diễn ra lab; chỉ thông báo ngoại lệ của
+Key Coach mới thay thế mốc này.
 
 Ngày 2 bạn gán nhãn từng ảnh. Hôm nay, một chiếc xe phải giữ được **cùng một
 `track_id` qua nhiều frame**. Trong bốn giờ, bạn sẽ gán nhãn bằng CVAT Track
@@ -11,6 +17,21 @@ chính clip đó.
 
 > Làm nhãn độc lập trước; chỉ xem teaching reference hoặc model sau mốc khóa
 > pre-gold. Model là công cụ chẩn đoán, không phải đáp án.
+
+## Làm cá nhân hoặc theo nhóm
+
+Bạn có thể chọn một trong hai cách sau, với cùng rubric và cùng chuẩn đầu ra:
+
+- **Cá nhân:** tự làm toàn bộ annotation, review, report và nộp repo của mình.
+- **Nhóm:** được thảo luận quy tắc, hỗ trợ thao tác và review chéo. Tuy nhiên,
+  mỗi người phải tự tạo annotation/evidence pre-gold của mình, tự hoàn thiện
+  report và nộp repo mang tên/MSSV của mình. Mỗi repo của thành viên nhóm phải
+  có [TEAM.md](TEAM.md) đã điền để công khai phần việc và phần học được của từng
+  người.
+
+Quy định đầy đủ về cách nộp, checkpoint và liêm chính học thuật lần lượt ở
+[SUBMISSION.md](SUBMISSION.md), [CHECKPOINTS.md](CHECKPOINTS.md) và
+[RULES.md](RULES.md).
 
 ## Sau bài thực hành, bạn có thể
 
@@ -80,8 +101,8 @@ model trước khi bạn khóa bản độc lập.
 1. Fork repo này sang tài khoản GitHub cá nhân nếu bạn cần commit/nộp bài từ GitHub.
 2. Tải [notebook](notebooks/day3_tracking_yolo_bytetrack.ipynb) về máy.
 3. Mở [Google Colab](https://colab.research.google.com/) → **File → Upload notebook**.
-4. Trong Cell 1, đặt `REPO_URL` là URL Git thô của fork, ví dụ
-   `https://github.com/ten-cua-ban/Day3-VideoTracking-Student.git`.
+4. Trong Cell 1, đặt `REPO_URL` là URL Git thô của repo cá nhân, ví dụ
+   `https://github.com/ten-cua-ban/K4-L2-L3-DAY03-HoVaTen-MSSV-VideoTracking.git`.
    Không dán link ở dạng `[tên](URL)`.
 5. Chạy Cell 1; đúng khi in ra `ROOT = .../Day3-Lab`. Sau đó chạy các cell theo thứ tự.
 
@@ -91,20 +112,12 @@ GitHub, upload vào Colab, giải nén thành `/content/Day3-Lab/`, rồi chạy
 
 ## Bài nộp
 
-Fork repo này hoặc tạo repo bài làm cá nhân theo thông báo của Lab Coach. Phải có:
-
-| Artifact | Nội dung |
-| --- | --- |
-| `annotations/clip_02/gt.txt` | nhãn warm-up export từ CVAT ở MOT 1.1 |
-| `annotations/clip_01/gt.txt` | nhãn cuối của clip chính sau rework |
-| `evidence/pre-gold/clip_01/` | `gt.txt` độc lập và `manifest.json` SHA-256 |
-| `GUIDELINE_MINI.md` | quy tắc ID/bbox và ít nhất ba ca mơ hồ |
-| `reports/review_partner.md` | finding theo frame/ID/lỗi/fix + reviewer checklist |
-| `outputs/` | metrics trước/sau, hai MOT model và `model_run_config.json` |
-| `reports/REPORT.md` | report hoàn chỉnh từ mẫu |
-
-Không commit `gold/`, model weights (`*.pt`), hoặc `outputs/vis_*/`. Không sửa
-trực tiếp file MOT để đi qua validator; sửa trong CVAT rồi export lại.
+Tạo repo cá nhân theo mẫu
+`K4-L2-L3-DAY03-HoVaTen-MSSV-VideoTracking` (không dấu, không khoảng trắng),
+push lên GitHub và dán link repo đó vào VLearn trước hạn nộp. Nếu làm nhóm, mỗi
+thành viên vẫn dùng tên/MSSV của chính mình trong tên repo và điền
+[TEAM.md](TEAM.md). Danh mục artifact, lệnh tự kiểm và các điều cấm nằm trong
+[SUBMISSION.md](SUBMISSION.md); đây là nguồn chuẩn trước khi nộp.
 
 ## Tài liệu chính
 
@@ -113,6 +126,10 @@ trực tiếp file MOT để đi qua validator; sửa trong CVAT rồi export l�
 - [Task specification](CVAT_TASK_SPEC.md)
 - [Phiếu quy tắc annotation](GUIDELINE_MINI.md)
 - [Rubric](RUBRIC.md)
+- [Hướng dẫn nộp bài](SUBMISSION.md)
+- [Checkpoint và self-check](CHECKPOINTS.md)
+- [Quy tắc làm bài](RULES.md)
+- [Mẫu khai báo nhóm — chỉ dùng khi làm nhóm](TEAM.md)
 - [Template report](reports/REPORT_TEMPLATE.md)
 - [Reviewer checklist](reports/REVIEW_PARTNER_TEMPLATE.md)
 - [Lý thuyết ReID](docs/day3-reid-theory.md)

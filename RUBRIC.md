@@ -1,5 +1,13 @@
 # Rubric Ngày 3 - Tracking Annotation (100 điểm)
 
+## Thành phần bắt buộc và bonus
+
+Toàn bộ tám tiêu chí trong bảng dưới là **bắt buộc** và cộng thành 100 điểm.
+Lab này không có điểm bonus: phần stretch chỉ để mở rộng hiểu biết, không dùng
+để bù thiếu artifact bắt buộc hoặc nâng tổng điểm vượt 100. Nội dung được chấm
+là evidence trong repo và khả năng giải thích bằng frame/ID; không chấm việc
+trình diễn hoặc số giờ làm thêm.
+
 | Tiêu chí | Bằng chứng | Điểm |
 | --- | --- | ---: |
 | Định dạng và tính hợp lệ | `check_mot_labels.py` chạy 0 lỗi trên cả hai clip; cột `track_id` có thật (export MOT 1.1, không phải YOLO) | 10 |

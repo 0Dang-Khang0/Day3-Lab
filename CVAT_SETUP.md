@@ -3,9 +3,7 @@
 ## Kết quả cần có trước giờ lab
 
 Day 3 tái sử dụng CVAT Community local từ Day 2 nhưng dùng schema tracking riêng:
-đúng một label `vehicle`. Hoàn thành [hướng dẫn cài đặt Day 2](../Day2-Object-Detection-Data/CVAT_SETUP.md) trước lớp; installation không tính vào 240 phút.
-
-Nếu dùng repo độc lập và không mở được link tương đối, dùng [Day 2 public pilot](https://github.com/VinUni-AI20k/Day2-Object-Detection-Data-pilot/blob/main/CVAT_SETUP.md) hoặc [tài liệu CVAT Community chính thức](https://docs.cvat.ai/docs/administration/community/basics/installation/).
+đúng một label `vehicle`. Hoàn thành [hướng dẫn cài đặt Day 2](https://github.com/VinUni-AI20k/Day2-Object-Detection-Data-pilot/blob/main/CVAT_SETUP.md) trước lớp; installation không tính vào 240 phút. Có thể đối chiếu thêm [tài liệu CVAT Community chính thức](https://docs.cvat.ai/docs/administration/community/basics/installation/).
 
 ## Day 3 readiness delta
 
